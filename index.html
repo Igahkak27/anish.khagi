@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anish Khagi | Operations & Administration</title>
+    <style>
+        /* CSS Variables for a clean, modern corporate look */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        /* Basic Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--white);
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 150px 5% 100px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            color: #bdc3c7;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Main Content Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 5%;
+        }
+
+        section {
+            margin-bottom: 60px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2.section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Experience Items */
+        .job {
+            margin-bottom: 30px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .job-company {
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        .job ul {
+            list-style-position: inside;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .job li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 5%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none; /* In a full build, this would be a hamburger menu */
+            }
+            .job-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Anish Khagi</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Header -->
+    <header>
+        <h1>Anish Khagi</h1>
+        <p>Operations & Administration Specialist | People & Program Coordination | Process & Event Logistics</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>I work at the intersection of operations, administrative coordination, and people management—building structured systems that keep projects, teams, and events running smoothly.</p>
+            <br>
+            <p>With a Bachelor of Business Management and advanced coursework in International Human Resource Management, my background bridges daily operational problem-solving with organizational leadership. Whether coordinating cross-functional teams for multi-stakeholder programs, managing vendor pipelines, or optimizing administrative workflows, my focus is always on clarity, precision, and reliable execution.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Operations & Administration Executive</span>
+                    <span>Jan 2023 - Present</span>
+                </div>
+                <div class="job-company">Clover Wedding and Events | Kathmandu, Nepal</div>
+                <ul>
+                    <li>Direct end-to-end operational planning and on-site logistics for high-touch events, maintaining high satisfaction throughout project lifecycles.</li>
+                    <li>Designed and implemented administrative workflows that reduced documentation turnaround time and improved team efficiency.</li>
+                    <li>Coordinate cross-functional teams of on-ground staff and external vendors, ensuring on-time milestone delivery within established budgets.</li>
+                    <li>Oversee financial records for daily operations, including vendor invoicing, expense reconciliation, and petty cash reporting.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Data Operations & Quality Assurance Associate</span>
+                    <span>May 2021 - Dec 2022</span>
+                </div>
+                <div class="job-company">CloudFactory Nepal | Kathmandu, Nepal</div>
+                <ul>
+                    <li>Evaluated, validated, and annotated high-volume datasets for machine learning workflows, consistently achieving a 98%+ quality benchmark.</li>
+                    <li>Maintained strict adherence to project service-level agreements (SLAs) and daily output targets in a high-compliance production environment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section id="leadership">
+            <h2 class="section-title">Leadership & Education</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">CEO / Head of Technical & Operations</span>
+                    <span>May 2022 - Apr 2024</span>
+                </div>
+                <div class="job-company">Growinity Business Club</div>
+                <ul>
+                    <li>Led all club operations including strategy development, event programming, and financial oversight for a 30+ member organization.</li>
+                    <li>Managed full-cycle HR operations: recruitment, onboarding, performance tracking, and team development.</li>
+                </ul>
+            </div>
+
+            <div class="job" style="margin-top: 30px;">
+                <div class="job-header">
+                    <span class="job-title">Bachelor of Business Management (BBM)</span>
+                    <span>Graduated: 2025</span>
+                </div>
+                <div class="job-company">College of Business Management | CGPA: 3.64 / 4.00</div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>I am always interested in connecting with teams working across operations, organizational development, and program management.</p>
+            <br>
+            <p><strong>Email:</strong> anish.khagi2k1@gmail.com</p>
+            <p><strong>Phone:</strong> +977 9861310180</p>
+            <p><strong>Location:</strong> Kathmandu, Nepal</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Anish Khagi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
